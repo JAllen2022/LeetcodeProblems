@@ -22,11 +22,9 @@ var equalPairs = function(grid) {
         }
     }
 
-    console.log("checking grids", grids)
 
     for(let i=0;i<grid.length;i++) {
         const temp = grid[i].join(",")
-        console.log("temp", temp)
         if(grids[temp]){
             count+=grids[temp]
         }
