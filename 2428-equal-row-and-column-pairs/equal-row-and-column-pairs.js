@@ -12,9 +12,7 @@ var equalPairs = function(grid) {
         for(let j=0;j<grid.length-1;j++) {
             temp+=grid[j][i]+","
         }
-
         temp+=grid[grid.length-1][i]
-
         if (grids[temp]){
             grids[temp]++
         } else {
@@ -22,14 +20,12 @@ var equalPairs = function(grid) {
         }
     }
 
-
     for(let i=0;i<grid.length;i++) {
         const temp = grid[i].join(",")
         if(grids[temp]){
             count+=grids[temp]
         }
     }
-
 
     return count
     
