@@ -12,7 +12,6 @@ var partitionLabels = function(s) {
     for(let i=0;i<s.length;i++) {
         let cur = s[i]
         let nextIndex = s.indexOf(cur,i+1)
-        // console.log("next", i, cur, nextIndex)
         if(nextIndex>right) {
             right=nextIndex
         } 
