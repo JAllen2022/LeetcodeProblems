@@ -5,11 +5,11 @@
 var removeDuplicates = function(nums) {
 
     let left=0;
-    let prev= -Infinity
+    let prev;
 
     for(let i=0; i<nums.length; i++) {
         const cur = nums[i]
-        if(prev===-Infinity){ 
+        if(prev===undefined){ 
             prev = cur
             left++
         }
