@@ -36,8 +36,6 @@ var romanToInt = function(s) {
             op1 = s[index]
             op2 = s[index]+ s[index+1]
         }
-        
-        
     }
 
     return num
