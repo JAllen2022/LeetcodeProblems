@@ -31,14 +31,12 @@ var balanceBST = function(root) {
     insertNodeBST(mid+1,arr.length-1, arr,newRoot)
     insertNodeBST(0,mid-1, arr,newRoot)
 
-
-
     return newRoot;
-    
 };
 
 function insertNodeBST (left,right,arr, root) {
    if(left>right || !root) return
+
    const mid = Math.floor((left+right)/2)
    const val = arr[mid]
    const tempNode = new TreeNode(val)
@@ -47,6 +45,5 @@ function insertNodeBST (left,right,arr, root) {
 
    insertNodeBST(mid+1,right,arr,tempNode)
    insertNodeBST(left,mid-1,arr,tempNode)
-
 
 }
