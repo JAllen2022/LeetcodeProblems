@@ -23,7 +23,6 @@ var balanceBST = function(root) {
     }
 
     inorderTraversal(root)
-    console.log(arr)
 
     const mid= Math.floor(arr.length/2)
     const newRoot = new TreeNode(arr[mid])
