@@ -11,15 +11,15 @@
  */
 var middleNode = function(head) {
     
-    let temp=new ListNode(0,head);
-    let tempNext= temp;
+    let slow=new ListNode(0,head);
+    let fast= slow;
 
-    while(tempNext) {
-        temp = temp.next;
-        if(tempNext.next) tempNext=tempNext.next.next
+    while(fast) {
+        slow = slow.next;
+        if(fast.next) fast=fast.next.next
         else break
     }
 
-    return temp;
+    return slow;
 
 };
