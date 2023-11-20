@@ -21,7 +21,6 @@ var searchInsert = function(nums, target) {
         else {
             const l = mid-1
             const r = mid+1
-            console.log("checking", l,mid,r)
             if(nums[l]<target && target<nums[mid] && nums[l]!==target){
                 return mid
             } else if (nums[mid]<target && target<nums[r] && nums[r]!==target){
