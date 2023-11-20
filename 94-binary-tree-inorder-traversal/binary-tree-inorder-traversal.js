@@ -12,10 +12,9 @@
  */
 var inorderTraversal = function(root) {
 
-    function dfs (node){
-        if(!node) return []
-        return [...dfs(node.left), node.val, ...dfs(node.right)]
-    }
+    
+        if(!root) return []
+        return [...inorderTraversal(root.left), root.val, ...inorderTraversal(root.right)]
+    
 
-    return dfs(root)
 };
