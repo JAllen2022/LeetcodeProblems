@@ -20,8 +20,6 @@ var pairSum = function(head) {
         
     }
 
-    console.log(slow)
-
     let temp = slow.next
     slow.next=null;
     let secondHalf;
@@ -35,7 +33,6 @@ var pairSum = function(head) {
         temp = tempTemp
     }
 
-    console.log(secondHalf)
     let firstHalf = head
     let max = -Infinity
 
