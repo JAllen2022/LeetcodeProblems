@@ -5,7 +5,8 @@
 var isHappy = function(n) {
 
     let num = n;
-    let myObj={[n]:true}
+    let myObj= new Map()
+    myObj.set(n,true)
 
     while(num!==1){
         let temp = num.toString();
@@ -15,8 +16,8 @@ var isHappy = function(n) {
             num+= Number(ele)*Number(ele)
         }
         if(num===1) return true
-        if(myObj[num]) return false
-        myObj[num]= true
+        if(myObj.get(num)) return false
+        myObj.set(num,true)
     }
 
     return true
