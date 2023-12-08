@@ -4,13 +4,16 @@
  */
 var addDigits = function(num) {
 
-    if(`${num}`.length<2) return num
+    let retNum = num
 
-    let retNum = 0;
-    for(let i=0;i<`${num}`.length;i++) {
-        retNum+= Number(`${num}`[i])
+    while(`${retNum}`.length>1){
+        let temp=0;
+
+        for(let i=0;i<`${retNum}`.length;i++) temp+= Number(`${retNum}`[i])
+
+        retNum=temp
     }
 
-    return addDigits(retNum)
+    return retNum
 
 };
