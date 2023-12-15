@@ -12,7 +12,6 @@ var searchRange = function(nums, target) {
     // first we find the right bound
     while(left<=right) {
         let half = Math.floor( (left+right)/2)
-        console.log("checking half", half)
         if(nums[half]===target) {
             if(nums[half+1]!==target) {
                 output[1]=half;
